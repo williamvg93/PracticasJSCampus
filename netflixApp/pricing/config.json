@@ -1,0 +1,23 @@
+{
+    "main" : {
+        "sectionHead" : {
+            "titulo" : "Choose the plan that’s right for you",
+            "parrafo" : [
+                {
+                    "imagen" : "../assets/img/check-solid.svg",
+                    "texto" : " Watch all you want. Ad-free."
+                },
+                {
+                    "imagen" : "../assets/img/check-solid.svg",
+                    "texto" : " Recommendations just for you."
+                },
+                {
+                    "imagen" : "../assets/img/check-solid.svg",
+                    "texto" : " Change or cancel your plan anytime."
+                }
+
+            ]
+
+        }
+    }
+}
