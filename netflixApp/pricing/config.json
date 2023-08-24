@@ -17,7 +17,47 @@
                 }
 
             ]
+        },
+        "sectionCard" : {
+            "cards" : [
+                {
+                    "cardBor" : "card mb-4 rounded-0 shadow-sm",
+                    "cardHeadBor" : "card-header py-3",
+                    "btnStyle" : "w-100 btn btn-lg btn-outline-danger",
+                    "tituloCard" : "Basic",
+                    "price" : "$16.900",
+                    "bgColor" : "",
+                    "infoCard1" : "Video quality Good", 
+                    "infoCard2" : "Resolution 720p", 
+                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
+                    "infoCard4" : "Watch on 1 different devices at the same time"
+                },
+                {   
+                    "cardBor" : "card mb-4 rounded-3 shadow-sm",
+                    "cardHeadBor" : "card-header py-3",
+                    "btnStyle" : "w-100 btn btn-lg btn-danger",
+                    "tituloCard" : "Estandar",
+                    "price" : "$26.900",
+                    "bgColor" : "",
+                    "infoCard1" : "Video quality <strong>Better</strong>", 
+                    "infoCard2" : "Resolution 1080p", 
+                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
+                    "infoCard4" : "<strong>Watch on 2 different devices</strong> at the same time"
+                },
+                {
+                    "cardBor" : "card mb-4 rounded-3 shadow-sm border-danger",
+                    "cardHeadBor" : "card-header py-3 text-bg-danger border-danger",
+                    "btnStyle" : "w-100 btn btn-lg btn-danger",
+                    "tituloCard" : "Premium",
+                    "price" : "$38.900",
+                    "bgColor" : "",
+                    "infoCard1" : "Video quality <strong>Best</strong>", 
+                    "infoCard2" : "Resolution <strong>4k+HDR</strong>", 
+                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
+                    "infoCard4" : "<strong>Watch on 4 different devices</strong> at the same time"
+                }
 
+            ]
         }
     }
 }

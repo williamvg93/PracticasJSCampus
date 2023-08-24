@@ -1,11 +1,5 @@
 const url = "config"
 
-
-/*     let peticion = await fetch(`${url}.json`)
-    let peticionJson = await peticion.json()
-    let domElement = document.querySelector('#contTitle')
-    console.log(peticionJson.main.sectionHead.titulo); */
-
 const ConstruirHead = async () => {
     let peticion = await fetch(`${url}.json`)
     let peticionJson = await peticion.json()
@@ -17,9 +11,39 @@ const ConstruirHead = async () => {
             `).join(" ")
         }
     `)
-    console.log(peticionJson.main.sectionHead.titulo);
-
 }
- 
 
+
+const ConstruirCards = async () => {
+    let peticion = await fetch(`${url}.json`)
+    let peticionJson = await peticion.json()
+    let domElement = document.querySelector('#cardsCont')
+    domElement.insertAdjacentHTML('beforeend', /* html */`
+        ${peticionJson.main.sectionCard.cards.map((value) => /* html */ `
+            <div class="col">
+                <div class= "${value.cardBor}">
+                    <div class="${value.cardHeadBor}">
+                        <h4 class="my-0 fw-normal">${value.tituloCard}</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">${value.price}</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>${value.infoCard1}</li>
+                        <li>${value.infoCard2}</li>
+                        <li>${value.infoCard3}</li>
+                        <li>${value.infoCard4}</li>
+                    </ul>
+                    <button type="button" class="${value.btnStyle}">Get started </button>
+                </div>
+            </div>
+        `).join(" ")
+        }
+    `)
+    console.log(peticionJson.main.sectionCard);
+}
+
+
+ 
 ConstruirHead()
+ConstruirCards()
