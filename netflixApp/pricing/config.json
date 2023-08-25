@@ -1,63 +1,124 @@
 {
-    "main" : {
-        "sectionHead" : {
-            "titulo" : "Choose the plan that’s right for you",
-            "parrafo" : [
-                {
-                    "imagen" : "../assets/img/check-solid.svg",
-                    "texto" : " Watch all you want. Ad-free."
-                },
-                {
-                    "imagen" : "../assets/img/check-solid.svg",
-                    "texto" : " Recommendations just for you."
-                },
-                {
-                    "imagen" : "../assets/img/check-solid.svg",
-                    "texto" : " Change or cancel your plan anytime."
-                }
-
-            ]
+  "main": {
+    "sectionHead": {
+      "titulo": "Choose the plan that’s right for you",
+      "parrafo": [
+        {
+          "imagen": "../assets/img/check-solid.svg",
+          "texto": " Watch all you want. Ad-free."
         },
-        "sectionCard" : {
-            "cards" : [
-                {
-                    "cardBor" : "card mb-4 rounded-0 shadow-sm",
-                    "cardHeadBor" : "card-header py-3",
-                    "btnStyle" : "w-100 btn btn-lg btn-outline-danger",
-                    "tituloCard" : "Basic",
-                    "price" : "$16.900",
-                    "bgColor" : "",
-                    "infoCard1" : "Video quality Good", 
-                    "infoCard2" : "Resolution 720p", 
-                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
-                    "infoCard4" : "Watch on 1 different devices at the same time"
-                },
-                {   
-                    "cardBor" : "card mb-4 rounded-3 shadow-sm",
-                    "cardHeadBor" : "card-header py-3",
-                    "btnStyle" : "w-100 btn btn-lg btn-danger",
-                    "tituloCard" : "Estandar",
-                    "price" : "$26.900",
-                    "bgColor" : "",
-                    "infoCard1" : "Video quality <strong>Better</strong>", 
-                    "infoCard2" : "Resolution 1080p", 
-                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
-                    "infoCard4" : "<strong>Watch on 2 different devices</strong> at the same time"
-                },
-                {
-                    "cardBor" : "card mb-4 rounded-3 shadow-sm border-danger",
-                    "cardHeadBor" : "card-header py-3 text-bg-danger border-danger",
-                    "btnStyle" : "w-100 btn btn-lg btn-danger",
-                    "tituloCard" : "Premium",
-                    "price" : "$38.900",
-                    "bgColor" : "",
-                    "infoCard1" : "Video quality <strong>Best</strong>", 
-                    "infoCard2" : "Resolution <strong>4k+HDR</strong>", 
-                    "infoCard3" : "Watch on your TV, computer, mobile phone and tablet", 
-                    "infoCard4" : "<strong>Watch on 4 different devices</strong> at the same time"
-                }
-
-            ]
+        {
+          "imagen": "../assets/img/check-solid.svg",
+          "texto": " Recommendations just for you."
+        },
+        {
+          "imagen": "../assets/img/check-solid.svg",
+          "texto": " Change or cancel your plan anytime."
         }
+      ]
+    },
+    "sectionCard": {
+      "cards": [
+        {
+          "cardBor": "rounded-0 ",
+          "cardHeadBor": "",
+          "btnStyle": "btn-outline-danger",
+          "tituloCard": "Basic",
+          "price": "$16.900",
+          "bgColor": "",
+          "infoCard1": "Video quality Good",
+          "infoCard2": "Resolution 720p",
+          "infoCard3": "Watch on your TV, computer, mobile phone and tablet",
+          "infoCard4": "Watch on 1 different devices at the same time"
+        },
+        {
+          "cardBor": "rounded-3 ",
+          "cardHeadBor": "",
+          "btnStyle": "btn-danger",
+          "tituloCard": "Estandar",
+          "price": "$26.900",
+          "bgColor": "",
+          "infoCard1": "Video quality <strong>Better</strong>",
+          "infoCard2": "Resolution 1080p",
+          "infoCard3": "Watch on your TV, computer, mobile phone and tablet",
+          "infoCard4": "<strong>Watch on 2 different devices</strong> at the same time"
+        },
+        {
+          "cardBor": "rounded-3  border-danger",
+          "cardHeadBor": "text-bg-danger border-danger",
+          "btnStyle": "btn-danger",
+          "tituloCard": "Premium",
+          "price": "$38.900",
+          "bgColor": "",
+          "infoCard1": "Video quality <strong>Best</strong>",
+          "infoCard2": "Resolution <strong>4k+HDR</strong>",
+          "infoCard3": "Watch on your TV, computer, mobile phone and tablet",
+          "infoCard4": "<strong>Watch on 4 different devices</strong> at the same time"
+        }
+      ]
+    },
+    "sectionArti": {
+      "title": "Compare plans",
+      "parrContent": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our Terms of Use for more details."
+    },
+    "sectionTable": {
+      "tableHead": [
+        {
+          "title": "Plan",
+          "width": "18%"
+        },
+        {
+          "title": "Watch on diferent devices",
+          "width": "22%"
+        },
+        {
+          "title": "Watch it on pc, tv, cell phones",
+          "width": "25%"
+        },
+        {
+          "title": "Resolution 1080p",
+          "width": "20%"
+        },
+        {
+          "title": "Resolution 4k+HDR",
+          "width": "30%"
+        }
+      ],
+      "tableBody": [
+        {
+          "title": "Basic",
+          "content": [
+            {
+              "td1": "<svg class='bi' width='24' height='24'></svg>",
+              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td3": "<svg class='bi' width='24' height='24'></svg>",
+              "td4": "<svg class='bi' width='30' height='24'></svg>"
+            }
+          ]
+        },
+        {
+          "title": "Standar",
+          "content": [
+            {
+              "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td4": "<svg class='bi' width='30' height='24'></svg>"
+            }
+          ]
+        },
+        {
+          "title": "Premium",
+          "content": [
+            {
+              "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+              "td4": "<svg class='bi' width='30' height='24'><use xlink:href='#check'/></svg>"
+            }
+          ]
+        }
+      ]
     }
+  }
 }
