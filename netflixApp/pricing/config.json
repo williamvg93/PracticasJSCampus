@@ -1,5 +1,12 @@
 {
   "main": {
+    "head" : {
+      "title" : "<title>netflix</title>",
+      "icon" : "<link rel='icon' href='../assets/img/n.png'>"
+    },
+    "header": {
+      "logo" : "<img src='../assets/img/netflix.png' class='ms-5' style='width: 15vh;' alt='' srcset=''> "
+    },
     "sectionHead": {
       "titulo": "Choose the plan that’s right for you",
       "parrafo": [
@@ -68,12 +75,12 @@
           "width": "18%"
         },
         {
-          "title": "Watch on diferent devices",
-          "width": "22%"
-        },
-        {
           "title": "Watch it on pc, tv, cell phones",
           "width": "25%"
+        },
+        {
+          "title": "Watch on diferent devices",
+          "width": "22%"
         },
         {
           "title": "Resolution 1080p",
@@ -87,38 +94,49 @@
       "tableBody": [
         {
           "title": "Basic",
-          "content": [
-            {
-              "td1": "<svg class='bi' width='24' height='24'></svg>",
-              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td3": "<svg class='bi' width='24' height='24'></svg>",
-              "td4": "<svg class='bi' width='30' height='24'></svg>"
-            }
-          ]
+          "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td2": "<svg class='bi' width='24' height='24'></svg>",
+          "td3": "<svg class='bi' width='24' height='24'></svg>",
+          "td4": "<svg class='bi' width='30' height='24'></svg>"
         },
         {
           "title": "Standar",
-          "content": [
-            {
-              "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td4": "<svg class='bi' width='30' height='24'></svg>"
-            }
-          ]
+          "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td4": "<svg class='bi' width='30' height='24'></svg>"
         },
         {
           "title": "Premium",
-          "content": [
-            {
-              "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
-              "td4": "<svg class='bi' width='30' height='24'><use xlink:href='#check'/></svg>"
-            }
-          ]
+          "td1": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td2": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td3": "<svg class='bi' width='24' height='24'><use xlink:href='#check'/></svg>",
+          "td4": "<svg class='bi' width='30' height='24'><use xlink:href='#check'/></svg>"
         }
       ]
+    },
+    "footer" : {
+
+      "infoCopy" : "Questions? Call 01 800 917 1563",
+      "infoCardFoo" : [
+        {
+          "infoFoo1" : "FAQ",
+          "infoFoo2" : "Privacy"
+        },
+        {
+          "infoFoo1" : "Help Center",
+          "infoFoo2" : "Cookie Preferences"
+        },
+        {
+          "infoFoo1" : "Netflix Shop",
+          "infoFoo2" : "Corporate Information"
+        },
+        {
+          "infoFoo1" : "Terms of Use",
+          "infoFoo2" : ""
+        }
+      ],
+      "infoEnd" : "&copy; Campuslands 2023 Bucaramanga"
     }
   }
 }

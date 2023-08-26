@@ -1,6 +1,28 @@
 const url = "config"
 
+
+
 const construirHead = async () => {
+    let peticion = await fetch(`${url}.json`)
+    let peticionJson = await peticion.json()
+    let domElement = document.querySelector('head')
+    domElement.insertAdjacentHTML('beforeend', /* html */`
+        ${peticionJson.main.head.title}
+        ${peticionJson.main.head.icon}
+    `)
+}
+
+
+const construirHeader = async () => {
+    let peticion = await fetch(`${url}.json`)
+    let peticionJson = await peticion.json()
+    let domElement = document.querySelector('#logoHeader')
+    domElement.insertAdjacentHTML('beforeend', /* html */`
+        ${peticionJson.main.header.logo}
+    `)
+}
+
+const construirMainHead = async () => {
     let peticion = await fetch(`${url}.json`)
     let peticionJson = await peticion.json()
     let domElement = document.querySelector('#contTitle')
@@ -39,7 +61,6 @@ const construirCards = async () => {
         `).join(" ")
         }
     `)
-    console.log(peticionJson.main.sectionCard);
 }
 
 const construirArti = async () => {
@@ -71,27 +92,55 @@ const construirTable = async () => {
                 </tr>
             </thead>
             <tbody>
+            ${peticionJson.main.sectionTable.tableBody.map((body) => /* html */`
                 <tr>
-                    ${peticionJson.main.sectionTable.tableBody.map((body) => /* html */`
-                    <th scope="row" class="text-center">Basic</th>
-                    <td><svg class="bi" width="24" height="24">
-                    </svg></td>
-                    <td><svg class="bi" width="24" height="24">
-                        <use xlink:href="#check" />
-                    </svg></td>
-                    <td><svg class="bi" width="24" height="24">
-                    </svg></td>
-                    <td><svg class="bi" width="30" height="24">
-                    </svg></td>
-                    `)}
+                    <th scope="row" class="text-center">${body.title}</th>
+                    <td>${body.td1}</td>
+                    <td>${body.td2}</td>
+                    <td>${body.td3}</td>
+                    <td>${body.td4}</td>
                 </tr>
+            `).join(" ")}
             </tbody>
         </table>
     `)
 }
 
- 
+const construirFooter = async () => {
+    let peticion = await fetch(`${url}.json`)
+    let peticionJson = await peticion.json()
+    let domElement = document.querySelector('#contFooter')
+    console.log(peticionJson);
+    domElement.insertAdjacentHTML('beforeend', /* html */`
+        <div class="row">
+            <div class="row my-3">
+                <div class="col-md-3 ms-2 text-left">
+                    <p class="text-left">${peticionJson.main.footer.infoCopy}</p>
+                </div>
+            </div>
+            ${peticionJson.main.footer.infoCardFoo.map((footerInfo) => /* html */`
+            <div class="col-md-2 ms-5">
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"> ${footerInfo.infoFoo1} </a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"> ${footerInfo.infoFoo2}  </a></li>
+                </ul>
+            </div>
+                `).join(" ")}
+            <div class="row my-3">
+                <div class="col-md-3 ms-2 text-left">
+                  <p>${peticionJson.main.footer.infoEnd}</p>
+                </div>
+            </div>
+        </div>
+    `)
+}
+
+
+
 construirHead()
+construirHeader()
+construirMainHead()
 construirCards()
 construirArti()
 construirTable()
+construirFooter()
